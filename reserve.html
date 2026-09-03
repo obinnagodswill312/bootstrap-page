@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orient Hotel | Reserve a Room</title>
+    <meta name="description" content="Book your stay at Orient Hotel Umuahia.">
+    <link rel="icon" href="images/orient-icon.png">
+    <!-- Verify this exact path matches your local files -->
+    <link rel="stylesheet" href="../bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/orient-logo.png" alt="Orient Hotel Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reserve.html"
+                            style="border: 2px solid #ffc107; background-color: #ffc107; color: #000;">Reserve Rooms</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container Content -->
+    <main class="container my-5 pt-5">
+        <div class="row g-5 align-items-center pt-4">
+            
+            <!-- Left Column: Hotel Contact Details -->
+            <div class="col-lg-5">
+                <div class="pe-lg-4">
+                    <span class="text-warning text-uppercase fw-bold letter-spacing-1">Get In Touch</span>
+                    <h1 class="display-5 fw-bold my-3 text-dark">We Are Expecting You</h1>
+                    <p class="text-muted mb-4 fs-5">Have questions before booking? Reach out directly to our front desk team in Umuahia for instant assistance.</p>
+                    
+                    <!-- Contact Cards / Items Stack -->
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-dark text-warning rounded-circle d-flex align-items-center justify-content-center p-3 me-3" style="width: 55px; height: 55px; flex-shrink: 0;">
+                            <i class="fa-solid fa-location-dot fa-lg"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1 text-dark">Our Location</h5>
+                            <p class="text-muted mb-0">Orient Hotel Complex, Aba Road, Umuahia, Abia State, Nigeria</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-dark text-warning rounded-circle d-flex align-items-center justify-content-center p-3 me-3" style="width: 55px; height: 55px; flex-shrink: 0;">
+                            <i class="fa-solid fa-phone fa-lg"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1 text-dark">Phone Numbers</h5>
+                            <p class="text-muted mb-0"><a href="tel:+2348000000000" class="text-decoration-none text-muted">+234 (0) 803 123 4567</a></p>
+                            <p class="text-muted mb-0"><a href="tel:+2348011111111" class="text-decoration-none text-muted">+234 (0) 705 987 6543</a></p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="bg-dark text-warning rounded-circle d-flex align-items-center justify-content-center p-3 me-3" style="width: 55px; height: 55px; flex-shrink: 0;">
+                            <i class="fa-solid fa-envelope fa-lg"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold mb-1 text-dark">Email Addresses</h5>
+                            <p class="text-muted mb-0"><a href="mailto:reservations@orienthotel.com" class="text-decoration-none text-muted">reservations@orienthotel.com</a></p>
+                            <p class="text-muted mb-0"><a href="mailto:info@orienthotel.com" class="text-decoration-none text-muted">info@orienthotel.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Complete Reservation Box Form -->
+            <div class="col-lg-7">
+                <div class="card shadow border-0 rounded-4 overflow-hidden bg-white">
+                    <div class="card-header bg-dark text-white text-center py-4">
+                        <h2 class="mb-1 fw-bold fs-3">Room Reservation Form</h2>
+                        <p class="mb-0 text-muted small">Fill your details below to save your space</p>
+                    </div>
+                    <div class="card-body p-4 p-sm-5">
+                        <form action="#" method="POST">
+                            
+                            <!-- Full Name Field -->
+                            <div class="mb-3">
+                                <label for="guestName" class="form-label fw-semibold text-secondary">Full Name</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light text-secondary"><i class="fa-solid fa-user"></i></span>
+                                    <input type="text" class="form-control" id="guestName" placeholder="Enter your full name" required>
+                                </div>
+                            </div>
+
+                            <!-- Email Address & Phone Number Grid -->
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <label for="guestEmail" class="form-label fw-semibold text-secondary">Email Address</label>
+                                    <input type="email" class="form-control" id="guestEmail" placeholder="name@example.com" required>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <label for="guestPhone" class="form-label fw-semibold text-secondary">Phone Number</label>
+                                    <input type="tel" class="form-control" id="guestPhone" placeholder="e.g. 08031234567" required>
+                                </div>
+                            </div>
+
+                            <!-- Room Type Selection Dropdown -->
+                            <div class="mb-3">
+                                <label for="roomType" class="form-label fw-semibold text-secondary">Select Room Type</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light text-secondary"><i class="fa-solid fa-door-open"></i></span>
+                                    <select class="form-select" id="roomType" required>
+                                        <option value="" selected disabled>Choose a room option...</option>
+                                        <option value="standard">Standard Room (₦30,000 / night)</option>
+                                        <option value="deluxe">Deluxe Room (₦45,000 / night)</option>
+                                        <option value="executive">Executive Room (₦60,000 / night)</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Date In and Date Out Row Block -->
+                            <div class="row">
+                                <div class="col-sm-6 mb-3">
+                                    <label for="checkInDate" class="form-label fw-semibold text-secondary">Check-In Date (Day In)</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light text-secondary"><i class="fa-solid fa-calendar-check"></i></span>
+                                        <input type="date" class="form-control" id="checkInDate" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-3">
+                                    <label for="checkOutDate" class="form-label fw-semibold text-secondary">Check-Out Date (Day Out)</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text bg-light text-secondary"><i class="fa-solid fa-calendar-xmark"></i></span>
+                                        <input type="date" class="form-control" id="checkOutDate" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Guest Counts Row Block -->
+                            <div class="row">
+                                <div class="col-6 mb-4">
+                                    <label for="adultsCount" class="form-label fw-semibold text-secondary">Adults</label>
+                                    <select class="form-select" id="adultsCount">
+                                        <option value="1">1 Adult</option>
+                                        <option value="2" selected>2 Adults</option>
+                                        <option value="3">3 Adults</option>
+                                        <option value="4">4 Adults</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 mb-4">
+                                    <label for="childrenCount" class="form-label fw-semibold text-secondary">Children</label>
+                                    <select class="form-select" id="childrenCount">
+                                        <option value="0" selected>0 Children</option>
+                                        <option value="1">1 Child</option>
+                                        <option value="2">2 Children</option>
+                                        <option value="3">3 Children</option>
+                                    </select>
+                                </div>
+                            </div>
